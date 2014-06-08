@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     end
   end
   post 'foods/:food_id/add_point' => 'food_comments#add_point', as: :points
+  #get 'thisismybackgroundwork' => 'backgroundwork#index', as: :background
+  resources :backgroundwork
 
   # Example of regular route:
 
