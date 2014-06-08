@@ -1,0 +1,19 @@
+<h1 class="text-center">愛食客資訊卡</div>
+<% @users.each { |user| %>
+      <table class="table table-hover">
+        <thead>
+          <th>暱稱</th>
+          <th>聯絡信箱</th>
+          <th>就讀學校</th>
+          <th>就讀系別</th>
+          <th>上次登入時間</th>
+        </thead>
+        <tbody>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.school %></td>
+          <td><%= user.faculty %></td>
+          <td><%= distance_of_time_in_words(Time.now, user.current_sign_in_at, include_seconds: true) %> ago</td>
+        </tbody>
+      </table>
+<% } %>

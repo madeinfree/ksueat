@@ -1,0 +1,12 @@
+<div class="row">
+  <% @foods.each { |food| %>
+    <div class="span4">
+      <h3><%= food.name %></h3>
+      <p>簡介：<%= food.introduction %></p>
+      <p>時間：<%= food.traffictimeopen.strftime('%H:%M:%S') %> ~ <%= food.traffictimeclose.strftime('%H:%M:%S') %></p>
+      <p>電話：<%= food.phone %></p>
+      <p>地址：<%= food.address %></p>
+      <p class="text-center"><%= link_to('更多資訊', food_path(food), class: 'btn btn-info') %></p>
+    </div>
+  <% } %>
+</div>

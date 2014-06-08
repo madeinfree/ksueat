@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  traffictimeopen: 2014-06-08 16:02:18
+  traffictimeclose: 2014-06-08 16:02:18
+  phone: MyString
+  introduction: MyString
+  latlng: MyString
+
+two:
+  name: MyString
+  address: MyString
+  traffictimeopen: 2014-06-08 16:02:18
+  traffictimeclose: 2014-06-08 16:02:18
+  phone: MyString
+  introduction: MyString
+  latlng: MyString

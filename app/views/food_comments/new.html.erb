@@ -1,0 +1,25 @@
+<ul class="breadcrumb">
+  <li><%= link_to('崑山美食', root_path) %> <span class="divider">/</span></li>
+  <li>新增簡介<span class="divider">/</span></li>
+  <li class="active">永康美食・<%= @food.name %></li>
+</ul>
+<div class="row">
+	<div class="span12">
+		<div class="span12 text-center">
+			<h2> <%= current_user.name %> 來精心策劃（<%= @food.name %>）簡介 </h2>
+		</div>
+		<div class="span12">
+			<%= simple_form_for(:comment, :url => food_food_comments_path) do |f| %>
+			  <%= f.error_notification %>
+
+			  <div class="form-inputs">
+			    <%= f.input :content, as: :text, label: '評論內容', placeholder: "評論內容，限制字數為40", :input_html => {class: "textareaHack" , :cols => 100, :rows => 10 }, :required => true, :autofocus => true %>
+			  </div>
+
+			  <div class="form-actions">
+			    <%= f.button :submit, "送出評論" %>
+			  </div>
+			<% end %>
+		</div>
+	</div>
+</div>
