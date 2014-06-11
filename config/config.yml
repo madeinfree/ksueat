@@ -1,6 +1,6 @@
 defaults: &defaults
   app_name: "崑山樂食搜查網"
-  domain: "http://ksueat.herokuapp.com/"    
+  domain: "http://ksueat.dev/"    
   facebook_app_id: 
   facebook_secret: 
   hipchat_token: 
